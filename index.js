@@ -7,8 +7,8 @@ var path = require('path')
 /**
  * doc is an object with an _attachements property (see here:
  * http://docs.couchdb.org/en/latest/api/document/common.html#creating-multiple-attachments)
- * the length of each attachment must be set
- * steams is an object with key Object.keys(doc._attachments) and value readable streams
+ * the length of each attachment must be set as well as a _steam
+ * property containing a readable stream. _stream won't be serialized
  */
 module.exports = function(doc){
 
